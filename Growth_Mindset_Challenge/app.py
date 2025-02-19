@@ -109,22 +109,22 @@ from io import BytesIO
 st.set_page_config(page_title='Data Sweeper', layout='wide')  
 
 # Load CSS from external file  
-def load_css():  
-    with open("styles.css") as f:  
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)  
+# def load_css():  
+#     with open("styles.css") as f:  
+#         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)  
 
 
 # you can achiee the same result with this link as we do in the html 
-# st.markdown(
-#     """
-#     <link rel="stylesheet" href="YOUR_PUBLIC_CSS_URL">
-#     """,
-#     unsafe_allow_html=True,
-# )        
+st.markdown(
+    """
+    <link rel="stylesheet" href="./styles.css">
+    """,
+    unsafe_allow_html=True,
+)        
 
 
 # Apply CSS styling  
-load_css()  
+# load_css()  
 
 
 
