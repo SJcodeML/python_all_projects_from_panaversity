@@ -16,93 +16,83 @@ st.set_page_config(page_title='Data Sweeper', layout='wide')
 
 
 # you can achiee the same result with this link as we do in the html 
+
+
 st.markdown(
     """
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
-/* Apply the Roboto Slab font to the body */  
+        /* Base styles */
+        * {
+            font-family: 'Roboto Slab', serif;
+        }
 
+        /* Heading styles */
+        .main_heading {
+            font-size: 40px;
+            color: rgb(139, 79, 79);
+        }
 
-*{
-    font-family: 'Roboto Slab', serif !important;
-   
-} 
+        .sub_heading {
+            background-color: rgb(237, 176, 158);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 0 15px;
+            font-size: 25px;
+            border: none;
+        }
 
-.main_heading{
-    font-family: 'Roboto Slab', serif !important;
-    font-size:40px;
-    color: rgb(139, 79, 79);
-}
+        /* File information styles */
+        .file-information {
+            font-size: 28px;
+            color: rgb(49, 41, 41);
+            margin-bottom: 20px;
+        }
 
-.sub_heading{
-    background-color:rgb(237, 176, 158); 
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 5px 0;
-    font-family: 'Roboto Slab', serif;
-    font-size: 25px;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 15px;
+        .file-data {
+            font-size: 18px;
+            color: rgb(89, 61, 61);
+            margin-bottom: 20px;
+        }
 
-}
+        /* Other styles */
+        .chng {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
 
-.file-information{
-    font-size: 28px;
-    color: rgb(49, 41, 41);
-    margin-bottom: 20px;
-}
-.file-data{
-    font-size: 18px;
-    color: rgb(89, 61, 61);
-    margin-bottom: 20px;
-}
+        .main {
+            background-color: rgb(237, 176, 158);
+            padding: 20px;
+        }
 
-.chng{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+        .heading4 {
+            color: rgb(188, 143, 143);
+            font-size: large;
+        }
 
+        .button {
+            background-color: rgb(237, 176, 158);
+            color: white;
+            padding: 3px 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 5px 0 30px;
+            font-size: 24px;
+            border: none;
+        }
 
-.main {  
-    background-color:rgb(237, 176, 158);   
-    padding: 20px;  
-}  
-
-
-.heading4 {
-    color:rgb(188, 143, 143);
-    font-size: large;
-}
-
-.button {
-    /* background: linear-gradient(to right, rgb(138, 43, 226), rgb(65, 105, 225));  */
-    background-color:rgb(237, 176, 158); 
-    color: white;
-    padding: 3px 15px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 5px 0;
-    font-family: 'Roboto Slab', serif;
-    font-size: 24px;
-    border: none; /* remove default border */
-    margin-bottom: 30px;
-}
-
-.footer {  
-    text-align: center;  
-    /* color: #555;   */
-    margin-top: 20px; 
-    color:rgb(197, 91, 91); 
-    font-size: 28px;
-}
-
- 
+        .footer {
+            text-align: center;
+            color: rgb(197, 91, 91);
+            font-size: 28px;
+        }
+    </style>
     """,
     unsafe_allow_html=True,
-)        
-
+)
 
 # Apply CSS styling  
 # load_css()  
