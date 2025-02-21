@@ -9,93 +9,93 @@ print("Current working directory:", os.getcwd())
 # Setup the app  
 st.set_page_config(page_title='Data Sweeper', layout='wide')  
 
-# Load CSS from external file  
-# def load_css():  
-#     with open("styles.css") as f:  
-#         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)  
+Load CSS from external file  
+def load_css():  
+    with open("styles.css") as f:  
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)  
 
 
 # you can achiee the same result with this link as we do in the html 
 
 
-st.markdown(
-    """
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+# st.markdown(
+#     """
+#     <style>
+#         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
-        /* Base styles */
-        * {
-            font-family: 'Roboto Slab', serif;
-        }
+#         /* Base styles */
+#         * {
+#             font-family: 'Roboto Slab', serif;
+#         }
 
-        /* Heading styles */
-        .main_heading {
-            font-size: 40px;
-            color: rgb(139, 79, 79);
-        }
+#         /* Heading styles */
+#         .main_heading {
+#             font-size: 40px;
+#             color: rgb(139, 79, 79);
+#         }
 
-        .sub_heading {
-            background-color: rgb(237, 176, 158);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 20px 0 15px;
-            font-size: 25px;
-            border: none;
-        }
+#         .sub_heading {
+#             background-color: rgb(237, 176, 158);
+#             color: white;
+#             padding: 10px 15px;
+#             border-radius: 5px;
+#             text-align: center;
+#             margin: 20px 0 15px;
+#             font-size: 25px;
+#             border: none;
+#         }
 
-        /* File information styles */
-        .file-information {
-            font-size: 28px;
-            color: rgb(49, 41, 41);
-            margin-bottom: 20px;
-        }
+#         /* File information styles */
+#         .file-information {
+#             font-size: 28px;
+#             color: rgb(49, 41, 41);
+#             margin-bottom: 20px;
+#         }
 
-        .file-data {
-            font-size: 18px;
-            color: rgb(89, 61, 61);
-            margin-bottom: 20px;
-        }
+#         .file-data {
+#             font-size: 18px;
+#             color: rgb(89, 61, 61);
+#             margin-bottom: 20px;
+#         }
 
-        /* Other styles */
-        .chng {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+#         /* Other styles */
+#         .chng {
+#             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#         }
 
-        .main {
-            background-color: rgb(237, 176, 158);
-            padding: 20px;
-        }
+#         .main {
+#             background-color: rgb(237, 176, 158);
+#             padding: 20px;
+#         }
 
-        .heading4 {
-            color: rgb(188, 143, 143);
-            font-size: large;
-        }
+#         .heading4 {
+#             color: rgb(188, 143, 143);
+#             font-size: large;
+#         }
 
-        .button {
-            background-color: rgb(237, 176, 158);
-            color: white;
-            padding: 3px 15px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 5px 0 30px;
-            font-size: 24px;
-            border: none;
-        }
+#         .button {
+#             background-color: rgb(237, 176, 158);
+#             color: white;
+#             padding: 3px 15px;
+#             border-radius: 5px;
+#             text-align: center;
+#             margin: 5px 0 30px;
+#             font-size: 24px;
+#             border: none;
+#         }
 
-        .footer {
-            text-align: center;
-            color: rgb(197, 91, 91);
-            font-size: 28px;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+#         .footer {
+#             text-align: center;
+#             color: rgb(197, 91, 91);
+#             font-size: 28px;
+#         }
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
 
 # Apply CSS styling  
-# load_css()  
+load_css()  
 
 
 
@@ -228,7 +228,7 @@ if uploaded_files:
 # Footer message  
         st.markdown('<div class="footer">🎉 All Files Processed Successfully!</div>', unsafe_allow_html=True)  
 
-st.write("Hi this is sidra ")
+
 
 
 
