@@ -1,0 +1,1 @@
+link for assignments details: https://github.com/panaversity/learn-modern-ai-python/tree/main/PROJECTS/online_class_projects
