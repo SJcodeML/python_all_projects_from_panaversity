@@ -1,0 +1,1 @@
+In this project we are renaming many images in any folder you need to create folder put some files or images then change it 
